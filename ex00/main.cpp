@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 19:38:10 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/12 20:48:12 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/12 21:34:12 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,16 @@
 
 int main()
 {
+	//test default
+	ClapTrap deFault;
+	deFault.attack("defaultEnemy");
+	
 	ClapTrap tester1("Mikey");
 	tester1.attack("Mario");
+	
 	tester1.takeDamage(5);
 	tester1.beRepaired(3);
+	tester1.attack("someone");
 	return 0;
 }
 

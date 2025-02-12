@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 15:21:04 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/12 20:37:52 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/12 21:20:24 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,20 @@ private:
 	int AttackDamage;
 public:
 	ClapTrap();
-	ClapTrap(std::string name);
+	ClapTrap(const std::string& name);//check
 	ClapTrap(const ClapTrap& other);
 	ClapTrap& operator=(const ClapTrap& other);
 	~ClapTrap();
+	
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
+
+	//getters
+	// std::string getName() const;
+	// unsigned int getDamage() const;
+	// unsigned int getHP() const;
+	// unsigned int getEnergy() const;
 };
 
 #endif
