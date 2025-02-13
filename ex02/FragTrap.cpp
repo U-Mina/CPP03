@@ -6,14 +6,14 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 13:46:25 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/13 14:23:25 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/13 14:42:19 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 #include <iostream>
 
-FragTrap::FragTrap() : ClapTrap("default_usr")
+FragTrap::FragTrap() : ClapTrap("default_frag")
 {
 	HitPoints = 100;
 	EnergyPoints = 100;

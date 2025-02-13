@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 19:46:12 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/12 22:36:51 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/13 14:38:46 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <iostream>
 
 //init values in default construct
-ClapTrap::ClapTrap() : name("default"), HitPoints(10), EnergyPoints(10), AttackDamage(0)
+ClapTrap::ClapTrap() : name("default_usr"), HitPoints(10), EnergyPoints(10), AttackDamage(0)
 {
 	std::cout << "Default constructor called!" << "\n";	
 }

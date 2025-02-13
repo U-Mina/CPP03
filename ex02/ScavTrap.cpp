@@ -6,14 +6,14 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 22:06:54 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/12 23:00:04 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/13 14:41:44 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 #include <iostream>
 
-ScavTrap::ScavTrap() : ClapTrap("default")
+ScavTrap::ScavTrap() : ClapTrap("default_Scav")
 {
 	HitPoints = 100;
 	EnergyPoints = 50;
