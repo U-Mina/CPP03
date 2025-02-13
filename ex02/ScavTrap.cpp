@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 22:06:54 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/13 13:45:55 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/12 23:00:04 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ScavTrap::ScavTrap() : ClapTrap("default")
 	HitPoints = 100;
 	EnergyPoints = 50;
 	AttackDamage = 20;
-	std::cout << "ScavTrap Default constrcutor is called!" << "\n";
+	std::cout << "Default ScavTrap constrcutor is called!" << "\n";
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
@@ -63,7 +63,7 @@ void ScavTrap::attack(const std::string& target)
 		return ;	
 	}
 	this->EnergyPoints--;
-	//std::cout << "This is attack from ScavTrap: " << "\n";
+	std::cout << "This is attack from ScavTrap: " << "\n";
 	std::cout << "ScavTrap " << name << " attacks " << target
 				<< ", causing " << AttackDamage << " points of damage!" << "\n";
 }
