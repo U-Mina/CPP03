@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 19:38:10 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/14 21:31:32 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/14 21:43:04 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,12 @@ int main()
 	DiamondTrap defaultDia;
 	defaultDia.attack("Diamond");
 	
-	ClapTrap claptrap;
-	claptrap.attack("Attacked_by_Clap");
-	ScavTrap scavtrap;
-	scavtrap.attack("Serena");
-	FragTrap fragtrap;
-	fragtrap.attack("Frog");
-
-	ClapTrap notdefault("LADY");
-	notdefault.attack("MAN");
+	// ClapTrap claptrap;
+	// claptrap.attack("Attacked_by_Clap");
+	// ScavTrap scavtrap;
+	// scavtrap.attack("Serena");
+	// FragTrap fragtrap;
+	// fragtrap.attack("Frog");
 	
 	DiamondTrap withname("DIVA");
 	withname.attack("SHINING");
