@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 19:38:10 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/13 14:37:25 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/14 21:35:08 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ int main()
 {
 	//test default
 	ClapTrap claptrap;
-	claptrap.attack("Target_under_attck");
 	ScavTrap scavtrap;
-	scavtrap.attack("scav");
 	FragTrap fragtrap;
+	claptrap.attack("Target_under_attck");
+	scavtrap.attack("scav");
 	fragtrap.attack("Frag_taget_under_default_ClapTrap_attack");
 	
 	ClapTrap tester1("Mikey");

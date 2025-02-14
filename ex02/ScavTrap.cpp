@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 22:06:54 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/13 14:41:44 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/14 21:12:24 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ScavTrap::ScavTrap() : ClapTrap("default_Scav")
 	HitPoints = 100;
 	EnergyPoints = 50;
 	AttackDamage = 20;
-	std::cout << "Default ScavTrap constrcutor is called!" << "\n";
+	std::cout << "ScavTrap default constrcutor is called!" << "\n";
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)

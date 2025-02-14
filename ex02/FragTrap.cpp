@@ -6,20 +6,19 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 13:46:25 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/13 14:42:19 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/14 21:11:57 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "FragTrap.hpp"
 #include <iostream>
 
-FragTrap::FragTrap() : ClapTrap("default_frag")
+FragTrap::FragTrap() : ClapTrap("default_Frag")
 {
 	HitPoints = 100;
 	EnergyPoints = 100;
 	AttackDamage = 30;
-	std::cout << "This is a different message from FragTrap constructor! "
-			<< "FragTrap default constructor called!" << "\n";
+	std::cout << "FragTrap: This is a different constructor: FragTrap default constructor called!" << "\n";
 }
 
 //obj created with parameterized default constructor (with name)
@@ -46,10 +45,9 @@ FragTrap& FragTrap::operator=(const FragTrap& other)
 }
 FragTrap::~FragTrap()
 {
-	std::cout << "This is a different message from FragTrap destructor! "
-			<< "FragTrap destructor called!" << "\n";
+	std::cout << "FragTrap: This is a different message from FragTrap destructor!" << "\n";
 }
 void FragTrap::highFivesGuys()
 {
-	std::cout << "Let's High Five! Horaaay!!" << "\n";
+	std::cout << "FragTrap: Let's High Five! Horaaay!!" << "\n";
 }
