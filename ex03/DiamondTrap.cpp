@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 14:46:28 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/14 21:29:24 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/14 21:53:41 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
  * _name(): init member var _name with the value "Default-usr"
  */
 DiamondTrap::DiamondTrap() :
-	ClapTrap("Default_Dia_clap_name"),
+	ClapTrap(),//"Default_Dia_clap_name"
 	FragTrap(),
 	ScavTrap(),
 	name("Default_Dia")//init diamondtrap private name attribute
