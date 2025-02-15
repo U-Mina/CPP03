@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 14:46:28 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/14 21:53:41 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/15 13:18:40 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,9 @@ DiamondTrap::DiamondTrap() :
 	ScavTrap(),
 	name("Default_Dia")//init diamondtrap private name attribute
 {
-	this->HitPoints = FragTrap::HitPoints;
-	this->EnergyPoints = ScavTrap::EnergyPoints;
-	this->AttackDamage = FragTrap::AttackDamage;
+	this->HitPoints = FragTrap::HitPoints;//100
+	this->EnergyPoints = ScavTrap::EnergyPoints;//50
+	this->AttackDamage = FragTrap::AttackDamage;//30
 	std::cout << "DiamondTrap default constructor called!" << "\n";
 }
 
@@ -43,15 +43,26 @@ DiamondTrap::DiamondTrap(const std::string& name) :
 	//std::cout << "DiamondTrap parameterized constructor called!" << "\n";
 	//std::cout << "DiamondTrap" << name << " constructor called!" << "\n";
 }
-DiamondTrap::DiamondTrap(const DiamondTrap& other)
+//cp consstructor, use better form
+// *this = other; ==>this way works but not good practice, cuz it create an OBJ with 
+//default initialization and then assign val, not efficient
+DiamondTrap::DiamondTrap(const DiamondTrap& other) :
+//litral meaning: construct ClapTrap part of this OBJ using other's data
+	ClapTrap(other),
+	ScavTrap(other),
+	FragTrap(other),
+	name(name)
 {
-	*this = other;
+	// std::cout << "DiamondTrap copy constructor called!" << "\n";
 }
+
 DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 {
 	if (this != &other)
 	{
-		ClapTrap::operator=(other);//!!!base class assignment called!!
+		ClapTrap::operator=(other);
+		//!!!base class assignment called!!
+		//calls ClapTrap's '=' operator to copy ClapTrap's members
 		ScavTrap:;operator=(other);
 		FragTrap::operator=(other);
 		// this->HitPoints = other.FragTrap::HitPoints;

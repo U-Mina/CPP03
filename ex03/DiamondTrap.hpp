@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 14:46:24 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/14 19:45:58 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/15 13:12:44 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,5 +41,21 @@ public:
 	//meaning: calling scavtrap::attack()
 };
 
-
 #endif
+
+/**
+ * NOTE:
+ *       A (diamond structure)
+ 	   /  \
+  	  B   C
+  	  \   /
+    	D
+ * Without virtual inheritance, class D would inherit two separate copies of A's member variables:
+ * one through B and one through C.
+ * This can lead to ambiguity and wasted space. For example, if A has a member variable x, 
+ * then D would have B::A::x and C::A::x, which might not be what you want.
+ * real SENARIO:
+ * in a GUI system, you have base 'window' class, and then 'Button', 'Textfield'
+ * both inherit from 'Window'. Then 'DialogBox' class inherit from both 'Button'
+ * and 'TextField', in this case, use VIRTUAL INHERITANCE, bc ONLY ONE 'Window' obj is wanted
+ */
