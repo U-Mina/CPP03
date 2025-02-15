@@ -6,7 +6,7 @@
 /*   By: ewu <ewu@student.42heilbronn.de>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/13 14:46:28 by ewu               #+#    #+#             */
-/*   Updated: 2025/02/15 13:18:40 by ewu              ###   ########.fr       */
+/*   Updated: 2025/02/15 13:24:34 by ewu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap& other) :
 	ClapTrap(other),
 	ScavTrap(other),
 	FragTrap(other),
-	name(name)
+	name(other.name)
 {
 	// std::cout << "DiamondTrap copy constructor called!" << "\n";
 }
@@ -72,6 +72,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& other)
 	}
 	return *this;
 }
+
 DiamondTrap::~DiamondTrap()
 {
 	std::cout << "DiamondTrap destuctor called" << "\n";
